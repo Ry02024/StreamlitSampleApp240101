@@ -37,20 +37,20 @@ IAM & 管理セクションでサービスアカウントを作成し、JSONキ�
 ### 3. 設定
 Google APIキー、CSE ID、BigQueryデータセット情報をローカル開発用に.envファイルに保存するか、デプロイ用にStreamlit Secretsを使用します。
 .envファイルの例:
-"""
+```bash
 BIGQUERY_PROJECT_ID=あなたのプロジェクトID
 BIGQUERY_DATASET_NAME=あなたのデータセット名
 BIGQUERY_TABLE_NAME=あなたのテーブル名
 GOOGLE_API_KEY=あなたのAPIキー
 GOOGLE_CSE_ID=あなたのCSE_ID
-"""
+```
 スクリプト内のservice_account_file_path変数を、ダウンロードしたサービスアカウントJSONキーファイルのパスに更新します。
 ### 4. アプリの実行
 Streamlitアプリを開始します:
-"""
+```bash
 streamlit run スクリプト名.py
 表示されたURLに移動して、アプリケーションとのやり取りを開始します。
-"""
+```
 
 ## 使用方法
 提供されたテキストボックスに検索クエリを入力し、「検索」ボタンをクリックします。
